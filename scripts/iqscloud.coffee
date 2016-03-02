@@ -15,4 +15,5 @@ module.exports = (robot) ->
           rep.reply ":thumbsup: iqs has finished testset #{tag}\n
 :smile: passed : #{data.passed}\n
 :unamused: failed : #{data.failed}\n
-:anguished: aborted: #{data.aborted}"
+:anguished: aborted: #{data.aborted}\n
+:no_mouth: no result: #{data.noresult}"
