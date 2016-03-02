@@ -10,10 +10,10 @@ module.exports = (robot) ->
           # error checking code here
           if res.statusCode isnt 200
             data = JSON.parse body
-            rep.send "Hmm, running #{tag} in iqs didn't work out - #{data.message}"
+            rep.send "Hmm, running #{tag} in iqs didn't work out. #{data.message}"
             return
           data = JSON.parse body
           rep.send "OK, iqs has finished testset #{tag}\n
-passed : #{data.passed}\n
-failed : #{data.failed}\n
-aborted: #{data.aborted}"
+:smile_cat: passed : #{data.passed}\n
+:unamused: failed : #{data.failed}\n
+:anguished: aborted: #{data.aborted}"
