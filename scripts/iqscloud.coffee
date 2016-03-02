@@ -1,6 +1,6 @@
 module.exports = (robot) ->
-
-      robot.respond /iqs run (.*)/i, (rep) ->
+      
+      robot.respond /run iqs test (.*)/i, (rep) ->
         tag = rep.match[1]
         rep.reply ":rocket: OK, running the testset tagged with " + tag + " in iqs - I'll report back the results when done."
         encTag =
