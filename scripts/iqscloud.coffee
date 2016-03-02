@@ -8,8 +8,8 @@ module.exports = (robot) ->
         .header('Accept', 'application/json')
         .get() (err, res, body) ->
           # error checking code here
-          if rep.statusCode isnt 200
-            rep.send "Hmm, that didn't work out - #{err}"
+          if res.statusCode isnt 200
+            rep.send "Hmm, running #{tag} in iqs didn't work out - #{err}"
             return
           data = JSON.parse body
           rep.send "OK, iqs has finished testset #{tag}\n
