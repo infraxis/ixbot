@@ -16,4 +16,5 @@ module.exports = (robot) ->
 :smile: passed : #{data.passed}\n
 :unamused: failed : #{data.failed}\n
 :anguished: aborted: #{data.aborted}\n
-:no_mouth: no result: #{data.noresult}"
+:no_mouth: no result: #{data.noresult}\n
+:nerd_face: passed percent: #{data.passedpercent}"
