@@ -13,7 +13,7 @@ module.exports = (robot) ->
             return
           data = JSON.parse body
           rep.send "OK, iqs has finished testset #{tag}\n
-                  passed : #{data.passed}\n
-                  failed : #{data.failed}\n
-                  aborted: #{data.aborted}"
+          passed : #{data.passed}\n
+          failed : #{data.failed}\n
+          aborted: #{data.aborted}"
                   
