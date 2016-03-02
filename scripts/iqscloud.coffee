@@ -4,7 +4,7 @@ module.exports = (robot) ->
         tag = rep.match[1]
         rep.reply "OK, running the testset tagged with " + tag + " in iqs\nI'll report back the results when done."
         encTag = 
-        robot.http("https://localhost:8181/IQScloudWeb/IQScloudManager/api?token=8zf0bb1ue0qkk8x0&tag=#{tag}")
+        robot.http("https://iqscloud.infraxis.com/IQScloudWeb/IQScloudManager/api?token=8zf0bb1ue0qkk8x0&tag=#{tag}")
         .header('Accept', 'application/json')
         .get() (err, res, body) ->
           # error checking code here
